@@ -1,0 +1,218 @@
+body{
+    background-color: #44b159;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 80vh;
+}
+.contenedor {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .logo {
+    margin-top: 70px;
+    max-width: 300px; 
+    width: 100%; 
+  }
+  .logo-inicio {
+
+    width: 60%; 
+    margin-left: 75px;
+  }
+  
+  .contenedor-boton {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    padding: 15px 20px;
+    display: inline-block; 
+    margin-bottom: 35px;
+    width: 160px;
+  }
+
+  .contenedor-flex {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  button {
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 25px; 
+    width: 100%;
+    color: #23A33C;
+    font-family: 'Montserrat', serif;
+  }
+
+  button#boton-registro {
+    background-color: transparent; 
+    color: white; 
+  }
+
+  button#boton-registro:hover {
+    text-decoration: underline; 
+  }
+
+  .oculto {
+    display: none;
+}
+
+
+  h2{
+    text-align: center;
+    font-size: 30px;
+    color: #ffff;
+    margin-top: 0px;
+
+}
+
+.contenedor-campos {
+    margin-top: 50px;
+    text-align: center; 
+}
+
+.campo {
+    display: block;
+    color: white; 
+    font-size: 35px;
+    font-family: 'Didot', serif;
+}
+
+.input-campo {
+    width: 60%; 
+    padding: 20px; 
+    margin-top: 15px; 
+    margin-bottom: 35px; 
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.contenedor-campos-registro{
+    margin-top: 20px;
+}
+
+.input-reg {
+    width: 90%; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 6px solid white; 
+    background-color: transparent; 
+    font-size: 25px;
+    font-family: 'Didot', serif;
+    outline: none; 
+    color: white;
+}
+
+/* Estilo del checkbox */
+.contenedor-acepto {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+ 
+  #check{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: #ffff;
+  }
+  
+  /* Estilo del tick */
+  .contenedor-acepto:hover input ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  /* Cuando el checkbox está marcado, muestra el tick */
+  .contenedor-acepto input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Estilo del tick */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Muestra el tick cuando el checkbox está marcado */
+  .contenedor-acepto input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Estilo del tick */
+  .contenedor-acepto .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  p{
+    color: white;
+    font-size: 18px;
+  }
+
+  .contenedor-img {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: -50px;
+}
+
+.contenedor-home-letra,
+.contenedor-home-logo {
+    flex: 1; 
+}
+
+.contenedor-home-letra img,
+.contenedor-home-logo img {
+    max-width: 100%;
+}
+
+.contenedor-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.link {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px); 
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.link img {
+    margin-left: 8px;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+
+

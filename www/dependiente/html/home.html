@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Corte Ingles: vista de dependiente</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didot&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+</head>
+<body>
+    <!-- Tu contenido HTML -->
+    <section id="menu_dependiente">
+        <div class="contenedor">
+            <img class="logo" src="../../imgs/logo_corte_ingles.png" alt="Logo">
+        </div>
+        <h2>Introduzca la contraseña</h2>
+        <div class="contenedor-campos">
+            <label for="contrasena" class="campo">Contraseña:</label>
+            <input id="contrasena" type="password" class="input-campo" placeholder="Introduce tu contraseña" required>
+        </div> 
+        <div class="contenedor-flex">
+            <div class="contenedor-boton">
+                <button id="boton-log"class="boton-inicio-sesion">Acceder</button>
+            </div>
+        </div>
+    </section> 
+    <video id="video" autoplay></video> 
+    <button id="boton-escanear">Escanear</button>  
+    <script src="../js/script.js"></script>
+</body>
+</html>

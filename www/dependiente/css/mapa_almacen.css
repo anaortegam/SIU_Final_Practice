@@ -1,0 +1,218 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', serif;
+    display: flex;
+    flex-direction: column;
+    max-height: 80 vh;
+}
+.contenedor-header {
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+}
+.logo_lupa,
+.logo_menu {
+    max-height: 30px; 
+}
+.logo_letras{
+    max-height: 40px; 
+}
+h2{
+    margin-left: 20px;
+    font-size: 25px;
+    color: #000000;
+    margin-top: 10px;
+    
+}
+.linea {
+    height: 0.5px;
+    background-color: rgb(19, 18, 18);
+    margin: 5px 0;
+}
+
+.producto1{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Estilos para la cantidad */
+.cantidad-contenedor {
+    display: flex;
+    align-items: center;
+}
+.contenedor-buscador {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+
+#input-buscador {
+    border: none; 
+    margin-left: 4px;
+    outline: none; 
+}
+
+.contenedor-buscador .busqueda {
+    display: flex;
+}
+
+
+.busqueda span {
+    margin-left: 5px; 
+}
+
+.icono-microfono {
+    width: 30px; 
+    height: auto; 
+    margin-left: 10px; 
+}
+
+.zona_plano {
+    margin-top: 20px;
+    align-items: center; 
+    padding-bottom: 20px;
+    
+    
+}
+#plano {
+    margin-left: 30%;
+    
+    width: 55%;
+}
+#contenedor-plano {
+    position: relative;
+}
+.contenedor-img {
+    position: relative;
+    width: 100%; 
+    height: 100%;
+}
+.popup {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; 
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+
+}
+#usuario img {
+    width: 40px; 
+    height: auto; 
+}
+#usuario {
+    width: 20px; 
+    height: auto; 
+}
+#carrito_almacen{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #44b159;
+    color: white;
+    text-align: center;
+    position: bottom;
+    width: 100%;
+    bottom: 0;
+    padding-top: 0px;
+    text-align: center;
+  }
+
+#posicion{
+    display: none;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.footer-icons div {
+    text-align: center; 
+}
+
+.footer-icons img {
+    width: 30px; 
+    height: 30px;
+    padding-top: 10px;
+}
+
+.footer-icons span {
+    display: block; 
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.total{
+    color: black;
+    font-weight: bolder;
+}
+.pagar{
+    color: black;
+    font-weight: bolder;
+}
+.nav1{
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+  }
+  .nav1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: end;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+   
+  }
+  .nav1.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list1{
+      flex-direction: column;
+      align-items: end;
+  }
+  .nav-list1 li a {
+      display: block;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      font-family: 'Montserrat';
+      font-weight: bolder;
+  }
+  .nav-list1{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+ 
+  .abrir, .cerrar{
+    display: block;
+    border: 0;
+    font-size: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+
+    padding: 0px;
+  }

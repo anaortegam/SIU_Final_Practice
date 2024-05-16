@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="../css/dependiente_almacen.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Información del Carrito</title>
+</head>
+<body>
+    <header>
+        <div class = "contenedor-header">
+            <div class="contenedor">
+                <a href="home.html">
+                    <img class="logo_letras" src="/imgs/letra_verde.png" alt="Letras">
+                </a>
+            </div> 
+            
+        </div>
+        <div class="contenedor-buscador" style="display: none;">
+            <div class="busqueda">
+                <div id="lupa-barra"  class="contenedor">
+                    <img class="logo_lupa" src="/imgs/lupa.png" alt="Lupa">
+                </div>
+                <input type="text" id="input-buscador" placeholder="Buscar tú producto">
+            </div>
+            <img id="microfono" class="icono-microfono" src="/imgs/microfono.png" alt="Micrófono">
+        </div>
+    </header>
+    <section id="pedidos">
+        <h2>Pedidos a preparar:</h2>
+        <div id="productos-container"></div>
+    </section>
+    
+    
+    
+
+    <script src="../js/dependiente_almacen.js"></script>
+    
+</body>
+<footer>
+    <div class="footer-icons">
+        <div>
+            <a href="mapa_almacen.html">
+                <img id="mapa_almacen" src="../../imgs/plano_almacen.png" alt="mapa_almacen">
+            </a>
+        </div>
+    </div>
+
+</footer>
+</html>

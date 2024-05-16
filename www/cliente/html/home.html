@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Corte Ingles: Home Page</title>
+    <link rel="stylesheet" href="../css/home_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didot&display=swap">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <section id="menu_cliente">
+        <div class="contenedor">
+            <img class="logo" src="/imgs/logo_corte_ingles.png" alt="Logo">
+        </div>
+        <h2>Haz tu compra más eficiente</h2>
+        <div class="contenedor-flex">
+            <div class="contenedor-boton">
+                <button id="boton-inicio-sesion-menu" class="boton-inicio-sesion">Iniciar Sesión</button>
+            </div>
+            <button id="boton-registro">Registrarse</button>
+        </div>
+    </section>
+    <section id="inicio_sesion" class="oculto">
+        <div class="contenedor">
+            <img class="logo-inicio" src="../../imgs/logo_corte_ingles.png" alt="Logo">
+        </div>
+        <div class="contenedor-campos">
+            <label for="usuario" class="campo">Usuario:</label>
+            <input id="usuario" type="text" class="input-campo" placeholder="Introduce tu nombre de usuario" required>
+            <label for="contrasena" class="campo">Contraseña:</label>
+            <input id="contrasena" type="password" class="input-campo" placeholder="Introduce tu contraseña" required>
+        </div>        
+        <div class="contenedor-flex">
+            <div class="contenedor-boton">
+                <button id="boton-log"class="boton-inicio-sesion">Iniciar Sesión</button>
+            </div>
+        </div>
+    </section>
+    <section id="registro" class="oculto">
+        <div class="contenedor">
+            <img class="logo-inicio" src="/imgs/logo_corte_ingles.png" alt="Logo">
+        </div>
+        <div class="contenedor-campos-registro">
+            <input id="nombre" type="text" class="input-reg" placeholder="Nombre" required>
+            <input id="email" type="email" class="input-reg" placeholder="Correo Electrónico" required>
+            <input id="usuario2" type="text" class="input-reg" placeholder="Usuario" required>
+            <input id="contrasena2" type="password" class="input-reg" placeholder="Contraseña" required>
+        </div>
+        <label class="contenedor-acepto">
+            <p>Acepto las condiciones de uso</p>
+            <input id="check"type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <div class="contenedor-flex">
+            <div class="contenedor-boton">
+                <button id="boton-home" class="boton-reg">Registrarse</button>
+            </div>
+        </div>
+    </section>
+    <section id="home" class="oculto">
+        <div class="contenedor-img">
+            <div class="contenedor-home-logo">
+                <img class="logo-inicio" src="/imgs/logo_corte_ingles.png" alt="Logo">
+            </div>
+        </div>
+        <h2>Menú</h2>
+        <div class="contenedor-img">
+            <div class="link">
+                <a href="carrito.html">
+                    <img src="/imgs/carrito.png" alt="Carrito">
+                </a>
+            </div>
+            <div class="link">
+                <a href="favoritos.html">
+                    <img src="/imgs/corazon.png" alt="Corazon">
+                </a>
+            </div>
+            <div class="link">
+                <a href="plano.html">
+                    <img src="/imgs/plano_home.png" alt="Plano">
+                </a>
+            </div>
+            <div class="link">
+                <a href="nfc.html">
+                    <img src="/imgs/nfc.png" alt="NFC">
+                </a>
+            </div>
+        </div>
+        
+    </section>
+    <script src="../js/script.js"></script>
+</body>
+</html>
